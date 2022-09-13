@@ -2,13 +2,145 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="src/style.css" />
-  </head>
+    <title>Weather app</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/style.css" />
+    <script src="https://kit.fontawesome.com/34b31f2133.js" crossorigin="anonymous"></script>  
+</head>
   <body>
-    <h1>hello git</h1>
+    <div class="container">
+      <header>
+        <h1>Check out the weather across the world</h1>
+      </header>
+      <form class="search-form" id="search-form">
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="search"
+              placeholder="Type a city.."
+              autofocus="on"
+              autocomplete="off"
+              id="city-input"
+              class="form-control shadow-sm"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary shadow-sm w-100"
+            />
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-success w-100"
+              id="current-location-button"
+            >
+              Current
+            </button>
+          </div>
+        </div>
+      </form>
+        <div class="row" style=" text-align: center;">
+          <div class="col">
+             <a href="#" class="link-primary" style="padding-top: 25px;">Lisbon ></a>
+          </div>
+          <div class="col">
+             <a href="#" class="link-primary" style="padding-top: 25px;">Paris ></a>
+          </div>
+          <div class="col">
+             <a href="#" class="link-primary" style="padding-top: 25px;">Sydney ></a>
+          </div>
+          <div class="col">
+             <a href="#" class="link-primary" style="padding-top: 25px;">San Franciso ></a>
+          </div>
+        </div>
+     
+        <div class="row">
+            <div class="col-sm-4">
+            <h3 id="city"></h3>
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="temperature" id="temperature"></span
+                  ><span class="units" id="units">°C</span>
+            </div>
+            </div>
+              <span class="featured">
+                <i class="fa-solid fa-cloud-sun"></i>
+              <h4 id="formatted-date">Tuesday 12:15</h4>
+              <h4 id="description"></h4>
+              </span>
+          </div>
+          <div class="col-sm-4">
+          <div class="card" style="width: 22rem">
+              <img src="images/lisbon.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Wind: <span id="wind"></span> km/h</li>
+                      <li class="list-group-item">Humidity: <span id="humidity"></span>%</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>  
+          </div>
+        </div>
+      <div class="forecast">
+        <div class="row" style=" text-align: center;">
+            <div class="col">
+              <h5>Mon</h5>
+              <i class="fa-solid fa-sun"></i>
+              <p class="temp">29°C</p>
+            </div>
+            <div class="col">
+              <h5>Tue</h5>
+              <i class="fa-solid fa-cloud-sun"></i>
+              <p class="temp">26°C</p>
+            </div>
+            <div class="col">
+              <h5>Wed</h5>
+              <i class="fa-solid fa-cloud"></i>
+              <p class="temp">24°C</p>
+            </div>
+            <div class="col">
+              <h5>Thu</h5>
+              <i class="fa-solid fa-sun"></i>
+              <p class="temp">30°C</p>
+            </div>
+            <div class="col">
+              <h5>Fri</h5>
+              <i class="fa-solid fa-sun"></i>
+              <p class="temp">31°C</p>
+            </div>
+            <div class="col">
+              <h5>Sat</h5>
+              <i class="fa-solid fa-cloud-sun"></i>
+              <p class="temp">28°C</p>
+            </div>
+            <div class="col">
+              <h5>Sun</h5>
+              <i class="fa-solid fa-sun"></i>
+              <p class="temp">27°C</p>
+            </div>
+        </div>
+      </div>  
+      <footer>
+          <br />
+          <p class="footer">
+          Created by 
+          <a href="https://www.linkedin.com/in/annadziubinska/">Anna Dziubinska</a>
+        </p>
+        </footer>
+    <script src="src/app.js"></script>
   </body>
-  <script src="src/app.js"></script>
 </html>

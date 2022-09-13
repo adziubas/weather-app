@@ -1,3 +1,80 @@
+body {
+  font-family: "Bangers", cursive;
+  font-family: "Montserrat", sans-serif;
+}
 h1 {
+  font-size: 2.5rem;
+  margin: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.5rem;
+  margin: 20px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin: 20px;
+  font-weight: 400;
+}
+
+.col-sm-3 {
+  display: block;
+  margin: 25px auto;
+}
+
+.col-sm-4 {
+  display: block;
+  margin: 60px auto;
+  padding: 0;
+}
+
+.col-sm-6 {
+  display: block;
+  margin: 25px auto;
+}
+
+.search-form {
+  margin-bottom: 30px;
+}
+
+.link-primary {
+  font-weight: 600;
+}
+
+.temperature {
+  font-size: 3.5rem;
+  margin: 20px;
+  font-weight: 700;
+}
+
+.featured h4,
+.units {
+  position: relative;
+  top: -25px;
+  font-size: 1.3rem;
+  margin: 20px;
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+.featured i {
+  font-size: 84px;
+  position: relative;
+  top: -92px;
+  left: 190px;
+}
+
+.forecast {
+  margin: 25px auto;
+}
+
+.forecast i {
+  font-size: 28px;
+}
+footer {
   text-align: center;
 }
