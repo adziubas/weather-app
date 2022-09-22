@@ -88,6 +88,16 @@ h3 {
 .forecast i {
   font-size: 28px;
 }
+
+.weather-temperature .active {
+  color: rgb(rgb(33, 33, 33);
+  cursor: default;
+}
+ 
+.weather-temperature .active:hover {
+text-decoration: none;
+}
+
 footer {
   text-align: center;
 }
