@@ -45,64 +45,49 @@
           <div class="col-3">
             <button
               class="btn btn-success w-100"
-              id="current-location-button"
-            >
+              id="current-location-button">
               Current
             </button>
           </div>
         </div>
       </form>
-        <div class="row" style=" text-align: center;">
-          <div class="col">
-             <a href="#" class="link-primary" style="padding-top: 25px;">Lisbon ></a>
-          </div>
-          <div class="col">
-             <a href="#" class="link-primary" style="padding-top: 25px;">Paris ></a>
-          </div>
-          <div class="col">
-             <a href="#" class="link-primary" style="padding-top: 25px;">Sydney ></a>
-          </div>
-          <div class="col">
-             <a href="#" class="link-primary" style="padding-top: 25px;">San Franciso ></a>
-          </div>
-        </div>
-     
-        <div class="row">
+          <div class="row">
             <div class="col-sm-4">
-            <h3 id="city"></h3>
-            <div class="d-flex weather-temperature">
+              <h3 id="city"></h3>
+              <div class="d-flex weather-temperature">
                 <img src="" alt="Clear" id="icon" />
                 <span class="temperature" id="temperature"></span>
                 <span class="units" id="celsius-link" class="active"> °C</span>           
+              </div>
+                <span class="featured">
+                  <img src="" alt="" id="icon" />
+                <h4 id="formatted-date">Tuesday 12:15</h4>
+                <h4 id="description"></h4>
+                </span>
             </div>
-              <span class="featured">
-                <img src="" alt="" id="icon" />
-              <h4 id="formatted-date">Tuesday 12:15</h4>
-              <h4 id="description"></h4>
-              </span>
-          </div>
-          <div class="col-sm-4">
-          <div class="card" style="width: 22rem">
+            <div class="col-sm-4">
+              <div class="card" style="width: 16rem">
                 <div class="card-body">
                   <p class="card-text">
                     <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><strong>More details:</strong></li>
                       <li class="list-group-item">Wind: <span id="wind"></span> m/h</li>
                       <li class="list-group-item">Humidity: <span id="humidity"></span>%</li>
                     </ul>
                   </p>
                 </div>
               </div>  
+            </div>
           </div>
-        </div>
-          <div class="weather-forecast" id="forecast">
-          </div>
+            <div class="weather-forecast" id="forecast">
+            </div>
       </div>
     </div>  
       <footer>
           <br />
           <p class="footer">
           Created by 
-          <a href="https://www.linkedin.com/in/annadziubinska/">Anna Dziubinska</a>
+          <a href="https://github.com/adziubas">Anna Dziubinska</a>
         </p>
         </footer>
     <script src="src/app.js"></script>

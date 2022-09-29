@@ -42,12 +42,10 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-          <div class="row">
             <div class="col-2">
               <div class="weather-forecast-date">${formatDay(
                 forecastDay.dt
               )}</div>
-              ${index}
               <img
                 src="http://openweathermap.org/img/wn/${
                   forecastDay.weather[0].icon
@@ -63,7 +61,6 @@ function displayForecast(response) {
                   forecastDay.temp.min
                 )}° </span>
               </div>
-            </div>
           </div>
         `;
     }
@@ -103,7 +100,7 @@ function displayWeatherCondition(response) {
 }
 
 function searchCity(city) {
-  let apiKey = "2bd326a60dc89a53287e446e819664df";
+  let apiKey = "62231151ce343c4d68652e1617efc22f";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
@@ -115,9 +112,9 @@ function handleSubmit(event) {
 }
 
 function searchLocation(position) {
-  let apiKey = "a91451ad43edf390988d45aac6a3ce24";
+  let apiKey = "62231151ce343c4d68652e1617efc22f";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-
+  console.log(apiUrl);
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
