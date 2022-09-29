@@ -85,7 +85,9 @@ h3 {
   margin-top: 20px;
   text-align: center;
   color: #000;
+  width: 100%;
 }
+
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
